@@ -37,33 +37,10 @@ class PostViewSet(viewsets.ModelViewSet):
     serializer_class = PostSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly,
                           IsAuthorOrReadOnly]
-    pagination_class = CustomLimitOffsetPagination
-
-    def list(self, request, *args, **kwargs):
-        if (request.query_params.get('limit')
-                or request.query_params.get('offset')):
-            return super().list(request, *args, **kwargs)
-        else:
-            serializer = self.get_serializer(self.get_queryset(), many=True)
-            return Response(serializer.data)
+    pagination_class = ConditionalPagination
 
     def perform_create(self, serializer):
         serializer.save(author=self.request.user)
-
-    def perform_update(self, serializer):
-        if serializer.instance.author != self.request.user:
-            raise PermissionDenied('Изменять чужие посты запрещено.')
-        serializer.save()
-
-    def destroy(self, request, *args, **kwargs):
-        instance = self.get_object()
-        if instance.author != self.request.user:
-            raise PermissionDenied('Удалять чужие посты запрещено.')
-        self.perform_destroy(instance)
-        return Response(status=status.HTTP_204_NO_CONTENT)
-
-    def perform_destroy(self, instance):
-        instance.delete()
 
 
 class GroupViewSet(viewsets.ReadOnlyModelViewSet):
@@ -87,18 +64,3 @@ class CommentViewSet(viewsets.ModelViewSet):
     def perform_create(self, serializer):
         post = get_object_or_404(Post, pk=self.kwargs['post_pk'])
         serializer.save(author=self.request.user, post=post)
-
-    def perform_update(self, serializer):
-        if serializer.instance.author != self.request.user:
-            raise PermissionDenied('Изменять чужие комментарии запрещено.')
-        serializer.save()
-
-    def destroy(self, request, *args, **kwargs):
-        instance = self.get_object()
-        if instance.author != self.request.user:
-            raise PermissionDenied('Удалять чужие комментарии запрещено.')
-        self.perform_destroy(instance)
-        return Response(status=status.HTTP_204_NO_CONTENT)
-
-    def perform_destroy(self, instance):
-        instance.delete()
