@@ -14,7 +14,6 @@ class CustomLimitOffsetPagination(LimitOffsetPagination):
             'results': data
         })
 
-class ConditionalPagination(CustomLimitOffsetPagination):
     def paginate_queryset(self, queryset, request, view=None):
         if not (request.query_params.get('limit') or request.query_params.get('offset')):
             return None
