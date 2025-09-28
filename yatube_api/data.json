@@ -1,0 +1,1003 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$abc123$...",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "user1",
+      "first_name": "User1",
+      "last_name": "Testoviy",
+      "email": "user1@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-01-15T10:00:00Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$abc123$...",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "user2",
+      "first_name": "User2",
+      "last_name": "Testoviy",
+      "email": "user2@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-01-15T10:00:00Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$abc123$...",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "user3",
+      "first_name": "User3",
+      "last_name": "Testoviy",
+      "email": "user3@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-01-15T10:00:00Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$abc123$...",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "user4",
+      "first_name": "User4",
+      "last_name": "Testoviy",
+      "email": "user4@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-01-15T10:00:00Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$abc123$...",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "user5",
+      "first_name": "User5",
+      "last_name": "Testoviy",
+      "email": "user5@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-01-15T10:00:00Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "posts.group",
+    "pk": 1,
+    "fields": {
+      "title": "Программирование",
+      "slug": "programming",
+      "description": "Все о программировании"
+    }
+  },
+  {
+    "model": "posts.group",
+    "pk": 2,
+    "fields": {
+      "title": "Путешествия",
+      "slug": "travel",
+      "description": "Путешествия по миру"
+    }
+  },
+  {
+    "model": "posts.group",
+    "pk": 3,
+    "fields": {
+      "title": "Кулинария",
+      "slug": "cooking",
+      "description": "Рецепты и кулинарные советы"
+    }
+  },
+  {
+    "model": "posts.post",
+    "pk": 1,
+    "fields": {
+      "text": "Это тестовый пост №1. Содержание поста может быть разным и интересным.",
+      "pub_date": "2025-08-31T14:57:39.044157Z",
+      "author": 2,
+      "group": 2,
+      "image": ""
+    }
+  },
+  {
+    "model": "posts.post",
+    "pk": 2,
+    "fields": {
+      "text": "Это тестовый пост №2. Содержание поста может быть разным и интересным.",
+      "pub_date": "2025-09-01T14:57:39.044157Z",
+      "author": 3,
+      "group": 3,
+      "image": ""
+    }
+  },
+  {
+    "model": "posts.post",
+    "pk": 3,
+    "fields": {
+      "text": "Это тестовый пост №3. Содержание поста может быть разным и интересным.",
+      "pub_date": "2025-09-02T14:57:39.044157Z",
+      "author": 4,
+      "group": null,
+      "image": ""
+    }
+  },
+  {
+    "model": "posts.post",
+    "pk": 4,
+    "fields": {
+      "text": "Это тестовый пост №4. Содержание поста может быть разным и интересным.",
+      "pub_date": "2025-09-03T14:57:39.044157Z",
+      "author": 5,
+      "group": 2,
+      "image": ""
+    }
+  },
+  {
+    "model": "posts.post",
+    "pk": 5,
+    "fields": {
+      "text": "Это тестовый пост №5. Содержание поста может быть разным и интересным.",
+      "pub_date": "2025-09-04T14:57:39.044157Z",
+      "author": 1,
+      "group": 3,
+      "image": ""
+    }
+  },
+  {
+    "model": "posts.post",
+    "pk": 6,
+    "fields": {
+      "text": "Это тестовый пост №6. Содержание поста может быть разным и интересным.",
+      "pub_date": "2025-09-05T14:57:39.044157Z",
+      "author": 2,
+      "group": null,
+      "image": ""
+    }
+  },
+  {
+    "model": "posts.post",
+    "pk": 7,
+    "fields": {
+      "text": "Это тестовый пост №7. Содержание поста может быть разным и интересным.",
+      "pub_date": "2025-09-06T14:57:39.044157Z",
+      "author": 3,
+      "group": 2,
+      "image": ""
+    }
+  },
+  {
+    "model": "posts.post",
+    "pk": 8,
+    "fields": {
+      "text": "Это тестовый пост №8. Содержание поста может быть разным и интересным.",
+      "pub_date": "2025-09-07T14:57:39.044157Z",
+      "author": 4,
+      "group": 3,
+      "image": ""
+    }
+  },
+  {
+    "model": "posts.post",
+    "pk": 9,
+    "fields": {
+      "text": "Это тестовый пост №9. Содержание поста может быть разным и интересным.",
+      "pub_date": "2025-09-08T14:57:39.044157Z",
+      "author": 5,
+      "group": null,
+      "image": ""
+    }
+  },
+  {
+    "model": "posts.post",
+    "pk": 10,
+    "fields": {
+      "text": "Это тестовый пост №10. Содержание поста может быть разным и интересным.",
+      "pub_date": "2025-09-09T14:57:39.044157Z",
+      "author": 1,
+      "group": 2,
+      "image": ""
+    }
+  },
+  {
+    "model": "posts.post",
+    "pk": 11,
+    "fields": {
+      "text": "Это тестовый пост №11. Содержание поста может быть разным и интересным.",
+      "pub_date": "2025-09-10T14:57:39.044157Z",
+      "author": 2,
+      "group": 3,
+      "image": ""
+    }
+  },
+  {
+    "model": "posts.post",
+    "pk": 12,
+    "fields": {
+      "text": "Это тестовый пост №12. Содержание поста может быть разным и интересным.",
+      "pub_date": "2025-09-11T14:57:39.044157Z",
+      "author": 3,
+      "group": null,
+      "image": ""
+    }
+  },
+  {
+    "model": "posts.post",
+    "pk": 13,
+    "fields": {
+      "text": "Это тестовый пост №13. Содержание поста может быть разным и интересным.",
+      "pub_date": "2025-09-12T14:57:39.044157Z",
+      "author": 4,
+      "group": 2,
+      "image": ""
+    }
+  },
+  {
+    "model": "posts.post",
+    "pk": 14,
+    "fields": {
+      "text": "Это тестовый пост №14. Содержание поста может быть разным и интересным.",
+      "pub_date": "2025-09-13T14:57:39.044157Z",
+      "author": 5,
+      "group": 3,
+      "image": ""
+    }
+  },
+  {
+    "model": "posts.post",
+    "pk": 15,
+    "fields": {
+      "text": "Это тестовый пост №15. Содержание поста может быть разным и интересным.",
+      "pub_date": "2025-09-14T14:57:39.044157Z",
+      "author": 1,
+      "group": null,
+      "image": ""
+    }
+  },
+  {
+    "model": "posts.post",
+    "pk": 16,
+    "fields": {
+      "text": "Это тестовый пост №16. Содержание поста может быть разным и интересным.",
+      "pub_date": "2025-09-15T14:57:39.044157Z",
+      "author": 2,
+      "group": 2,
+      "image": ""
+    }
+  },
+  {
+    "model": "posts.post",
+    "pk": 17,
+    "fields": {
+      "text": "Это тестовый пост №17. Содержание поста может быть разным и интересным.",
+      "pub_date": "2025-09-16T14:57:39.044157Z",
+      "author": 3,
+      "group": 3,
+      "image": ""
+    }
+  },
+  {
+    "model": "posts.post",
+    "pk": 18,
+    "fields": {
+      "text": "Это тестовый пост №18. Содержание поста может быть разным и интересным.",
+      "pub_date": "2025-09-17T14:57:39.044157Z",
+      "author": 4,
+      "group": null,
+      "image": ""
+    }
+  },
+  {
+    "model": "posts.post",
+    "pk": 19,
+    "fields": {
+      "text": "Это тестовый пост №19. Содержание поста может быть разным и интересным.",
+      "pub_date": "2025-09-18T14:57:39.044157Z",
+      "author": 5,
+      "group": 2,
+      "image": ""
+    }
+  },
+  {
+    "model": "posts.post",
+    "pk": 20,
+    "fields": {
+      "text": "Это тестовый пост №20. Содержание поста может быть разным и интересным.",
+      "pub_date": "2025-09-19T14:57:39.044157Z",
+      "author": 1,
+      "group": 3,
+      "image": ""
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 1,
+    "fields": {
+      "post": 1,
+      "author": 3,
+      "text": "Отличный пост! Комментарий №1 к посту 1",
+      "created": "2025-08-31T13:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 2,
+    "fields": {
+      "post": 1,
+      "author": 4,
+      "text": "Отличный пост! Комментарий №2 к посту 1",
+      "created": "2025-08-31T12:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 3,
+    "fields": {
+      "post": 1,
+      "author": 5,
+      "text": "Отличный пост! Комментарий №3 к посту 1",
+      "created": "2025-08-31T11:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 4,
+    "fields": {
+      "post": 2,
+      "author": 4,
+      "text": "Отличный пост! Комментарий №1 к посту 2",
+      "created": "2025-09-01T13:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 5,
+    "fields": {
+      "post": 2,
+      "author": 5,
+      "text": "Отличный пост! Комментарий №2 к посту 2",
+      "created": "2025-09-01T12:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 6,
+    "fields": {
+      "post": 2,
+      "author": 1,
+      "text": "Отличный пост! Комментарий №3 к посту 2",
+      "created": "2025-09-01T11:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 7,
+    "fields": {
+      "post": 3,
+      "author": 5,
+      "text": "Отличный пост! Комментарий №1 к посту 3",
+      "created": "2025-09-02T13:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 8,
+    "fields": {
+      "post": 3,
+      "author": 1,
+      "text": "Отличный пост! Комментарий №2 к посту 3",
+      "created": "2025-09-02T12:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 9,
+    "fields": {
+      "post": 3,
+      "author": 2,
+      "text": "Отличный пост! Комментарий №3 к посту 3",
+      "created": "2025-09-02T11:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 10,
+    "fields": {
+      "post": 4,
+      "author": 1,
+      "text": "Отличный пост! Комментарий №1 к посту 4",
+      "created": "2025-09-03T13:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 11,
+    "fields": {
+      "post": 4,
+      "author": 2,
+      "text": "Отличный пост! Комментарий №2 к посту 4",
+      "created": "2025-09-03T12:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 12,
+    "fields": {
+      "post": 4,
+      "author": 3,
+      "text": "Отличный пост! Комментарий №3 к посту 4",
+      "created": "2025-09-03T11:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 13,
+    "fields": {
+      "post": 5,
+      "author": 2,
+      "text": "Отличный пост! Комментарий №1 к посту 5",
+      "created": "2025-09-04T13:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 14,
+    "fields": {
+      "post": 5,
+      "author": 3,
+      "text": "Отличный пост! Комментарий №2 к посту 5",
+      "created": "2025-09-04T12:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 15,
+    "fields": {
+      "post": 5,
+      "author": 4,
+      "text": "Отличный пост! Комментарий №3 к посту 5",
+      "created": "2025-09-04T11:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 16,
+    "fields": {
+      "post": 6,
+      "author": 3,
+      "text": "Отличный пост! Комментарий №1 к посту 6",
+      "created": "2025-09-05T13:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 17,
+    "fields": {
+      "post": 6,
+      "author": 4,
+      "text": "Отличный пост! Комментарий №2 к посту 6",
+      "created": "2025-09-05T12:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 18,
+    "fields": {
+      "post": 6,
+      "author": 5,
+      "text": "Отличный пост! Комментарий №3 к посту 6",
+      "created": "2025-09-05T11:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 19,
+    "fields": {
+      "post": 7,
+      "author": 4,
+      "text": "Отличный пост! Комментарий №1 к посту 7",
+      "created": "2025-09-06T13:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 20,
+    "fields": {
+      "post": 7,
+      "author": 5,
+      "text": "Отличный пост! Комментарий №2 к посту 7",
+      "created": "2025-09-06T12:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 21,
+    "fields": {
+      "post": 7,
+      "author": 1,
+      "text": "Отличный пост! Комментарий №3 к посту 7",
+      "created": "2025-09-06T11:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 22,
+    "fields": {
+      "post": 8,
+      "author": 5,
+      "text": "Отличный пост! Комментарий №1 к посту 8",
+      "created": "2025-09-07T13:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 23,
+    "fields": {
+      "post": 8,
+      "author": 1,
+      "text": "Отличный пост! Комментарий №2 к посту 8",
+      "created": "2025-09-07T12:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 24,
+    "fields": {
+      "post": 8,
+      "author": 2,
+      "text": "Отличный пост! Комментарий №3 к посту 8",
+      "created": "2025-09-07T11:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 25,
+    "fields": {
+      "post": 9,
+      "author": 1,
+      "text": "Отличный пост! Комментарий №1 к посту 9",
+      "created": "2025-09-08T13:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 26,
+    "fields": {
+      "post": 9,
+      "author": 2,
+      "text": "Отличный пост! Комментарий №2 к посту 9",
+      "created": "2025-09-08T12:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 27,
+    "fields": {
+      "post": 9,
+      "author": 3,
+      "text": "Отличный пост! Комментарий №3 к посту 9",
+      "created": "2025-09-08T11:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 28,
+    "fields": {
+      "post": 10,
+      "author": 2,
+      "text": "Отличный пост! Комментарий №1 к посту 10",
+      "created": "2025-09-09T13:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 29,
+    "fields": {
+      "post": 10,
+      "author": 3,
+      "text": "Отличный пост! Комментарий №2 к посту 10",
+      "created": "2025-09-09T12:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 30,
+    "fields": {
+      "post": 10,
+      "author": 4,
+      "text": "Отличный пост! Комментарий №3 к посту 10",
+      "created": "2025-09-09T11:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 31,
+    "fields": {
+      "post": 11,
+      "author": 3,
+      "text": "Отличный пост! Комментарий №1 к посту 11",
+      "created": "2025-09-10T13:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 32,
+    "fields": {
+      "post": 11,
+      "author": 4,
+      "text": "Отличный пост! Комментарий №2 к посту 11",
+      "created": "2025-09-10T12:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 33,
+    "fields": {
+      "post": 11,
+      "author": 5,
+      "text": "Отличный пост! Комментарий №3 к посту 11",
+      "created": "2025-09-10T11:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 34,
+    "fields": {
+      "post": 12,
+      "author": 4,
+      "text": "Отличный пост! Комментарий №1 к посту 12",
+      "created": "2025-09-11T13:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 35,
+    "fields": {
+      "post": 12,
+      "author": 5,
+      "text": "Отличный пост! Комментарий №2 к посту 12",
+      "created": "2025-09-11T12:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 36,
+    "fields": {
+      "post": 12,
+      "author": 1,
+      "text": "Отличный пост! Комментарий №3 к посту 12",
+      "created": "2025-09-11T11:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 37,
+    "fields": {
+      "post": 13,
+      "author": 5,
+      "text": "Отличный пост! Комментарий №1 к посту 13",
+      "created": "2025-09-12T13:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 38,
+    "fields": {
+      "post": 13,
+      "author": 1,
+      "text": "Отличный пост! Комментарий №2 к посту 13",
+      "created": "2025-09-12T12:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 39,
+    "fields": {
+      "post": 13,
+      "author": 2,
+      "text": "Отличный пост! Комментарий №3 к посту 13",
+      "created": "2025-09-12T11:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 40,
+    "fields": {
+      "post": 14,
+      "author": 1,
+      "text": "Отличный пост! Комментарий №1 к посту 14",
+      "created": "2025-09-13T13:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 41,
+    "fields": {
+      "post": 14,
+      "author": 2,
+      "text": "Отличный пост! Комментарий №2 к посту 14",
+      "created": "2025-09-13T12:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 42,
+    "fields": {
+      "post": 14,
+      "author": 3,
+      "text": "Отличный пост! Комментарий №3 к посту 14",
+      "created": "2025-09-13T11:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 43,
+    "fields": {
+      "post": 15,
+      "author": 2,
+      "text": "Отличный пост! Комментарий №1 к посту 15",
+      "created": "2025-09-14T13:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 44,
+    "fields": {
+      "post": 15,
+      "author": 3,
+      "text": "Отличный пост! Комментарий №2 к посту 15",
+      "created": "2025-09-14T12:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 45,
+    "fields": {
+      "post": 15,
+      "author": 4,
+      "text": "Отличный пост! Комментарий №3 к посту 15",
+      "created": "2025-09-14T11:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 46,
+    "fields": {
+      "post": 16,
+      "author": 3,
+      "text": "Отличный пост! Комментарий №1 к посту 16",
+      "created": "2025-09-15T13:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 47,
+    "fields": {
+      "post": 16,
+      "author": 4,
+      "text": "Отличный пост! Комментарий №2 к посту 16",
+      "created": "2025-09-15T12:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 48,
+    "fields": {
+      "post": 16,
+      "author": 5,
+      "text": "Отличный пост! Комментарий №3 к посту 16",
+      "created": "2025-09-15T11:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 49,
+    "fields": {
+      "post": 17,
+      "author": 4,
+      "text": "Отличный пост! Комментарий №1 к посту 17",
+      "created": "2025-09-16T13:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 50,
+    "fields": {
+      "post": 17,
+      "author": 5,
+      "text": "Отличный пост! Комментарий №2 к посту 17",
+      "created": "2025-09-16T12:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 51,
+    "fields": {
+      "post": 17,
+      "author": 1,
+      "text": "Отличный пост! Комментарий №3 к посту 17",
+      "created": "2025-09-16T11:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 52,
+    "fields": {
+      "post": 18,
+      "author": 5,
+      "text": "Отличный пост! Комментарий №1 к посту 18",
+      "created": "2025-09-17T13:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 53,
+    "fields": {
+      "post": 18,
+      "author": 1,
+      "text": "Отличный пост! Комментарий №2 к посту 18",
+      "created": "2025-09-17T12:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 54,
+    "fields": {
+      "post": 18,
+      "author": 2,
+      "text": "Отличный пост! Комментарий №3 к посту 18",
+      "created": "2025-09-17T11:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 55,
+    "fields": {
+      "post": 19,
+      "author": 1,
+      "text": "Отличный пост! Комментарий №1 к посту 19",
+      "created": "2025-09-18T13:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 56,
+    "fields": {
+      "post": 19,
+      "author": 2,
+      "text": "Отличный пост! Комментарий №2 к посту 19",
+      "created": "2025-09-18T12:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 57,
+    "fields": {
+      "post": 19,
+      "author": 3,
+      "text": "Отличный пост! Комментарий №3 к посту 19",
+      "created": "2025-09-18T11:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 58,
+    "fields": {
+      "post": 20,
+      "author": 2,
+      "text": "Отличный пост! Комментарий №1 к посту 20",
+      "created": "2025-09-19T13:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 59,
+    "fields": {
+      "post": 20,
+      "author": 3,
+      "text": "Отличный пост! Комментарий №2 к посту 20",
+      "created": "2025-09-19T12:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.comment",
+    "pk": 60,
+    "fields": {
+      "post": 20,
+      "author": 4,
+      "text": "Отличный пост! Комментарий №3 к посту 20",
+      "created": "2025-09-19T11:57:39.044157Z"
+    }
+  },
+  {
+    "model": "posts.follow",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "following": 2
+    }
+  },
+  {
+    "model": "posts.follow",
+    "pk": 2,
+    "fields": {
+      "user": 1,
+      "following": 5
+    }
+  },
+  {
+    "model": "posts.follow",
+    "pk": 3,
+    "fields": {
+      "user": 2,
+      "following": 1
+    }
+  },
+  {
+    "model": "posts.follow",
+    "pk": 4,
+    "fields": {
+      "user": 2,
+      "following": 4
+    }
+  },
+  {
+    "model": "posts.follow",
+    "pk": 5,
+    "fields": {
+      "user": 4,
+      "following": 2
+    }
+  },
+  {
+    "model": "posts.follow",
+    "pk": 6,
+    "fields": {
+      "user": 4,
+      "following": 5
+    }
+  },
+  {
+    "model": "posts.follow",
+    "pk": 7,
+    "fields": {
+      "user": 5,
+      "following": 1
+    }
+  },
+  {
+    "model": "posts.follow",
+    "pk": 8,
+    "fields": {
+      "user": 5,
+      "following": 4
+    }
+  }
+]
